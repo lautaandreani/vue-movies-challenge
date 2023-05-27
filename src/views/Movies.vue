@@ -2,7 +2,7 @@
   <main class="min-w-full bg-soft_gray flex flex-col gap-4 items-center p-4 h-full">
     <Search @input-value="(e) => (search = e)" />
     <div class="flex flex-wrap justify-center gap-10 pl-10 pb-10" v-if="filteredMovies?.length">
-      <MovieCard v-for="movie in filteredMovies" :key="movie.id" :movie="movie" />
+      <MovieCard v-for="movie in filteredMovies" :key="movie.id" :movie="movie" type="movies" />
     </div>
     <div v-else>
       <h3>

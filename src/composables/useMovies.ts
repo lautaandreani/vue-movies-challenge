@@ -1,11 +1,13 @@
 import { ref } from 'vue'
-import { getMovies, getTvShows, getMainMovie, getMovieById } from '../services/api'
+import { getMovies, getTvShows, getMainMovie, getMovieById, getTvShowById } from '../services/api'
 
 import type { Movie, MovieInfo } from '../models/movies'
+import { TvShow } from '../models/tv'
 
 const useMovies = () => {
   const movies = ref<Movie[] | undefined>([])
-  const tvShows = ref<Movie[] | undefined>([])
+  const tvShows = ref<TvShow[] | undefined>([])
+  const tvShow = ref<TvShow | undefined>()
   const mainMovie = ref<Movie | undefined>()
   const movieById = ref<MovieInfo | undefined>()
 
@@ -16,6 +18,10 @@ const useMovies = () => {
 
   const getTvShowList = async () => {
     tvShows.value = await getTvShows()
+  }  
+  
+  const getTvShowByIdData = async (id: number) => {
+    tvShow.value = await getTvShowById(id)
   }
 
   const getPopularMovie = async () => {
@@ -36,8 +42,10 @@ const useMovies = () => {
     tvShows,
     mainMovie,
     movieById,
+    tvShow,
     getMoviesList,
     getTvShowList,
+    getTvShowByIdData,
     getPopularMovie,
     getMovieByIdData,
     filterMovies,

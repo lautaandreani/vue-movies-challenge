@@ -1,0 +1,386 @@
+{
+  "adult": false,
+  "backdrop_path": "/8qlKzvR68dH0ZaJFG9XBEctvvUo.jpg",
+  "created_by": [
+    {
+      "id": 1510561,
+      "credit_id": "59fc07a3c3a3681abb023a40",
+      "name": "Jean-Luc Azoulay",
+      "gender": 2,
+      "profile_path": null
+    }
+  ],
+  "episode_run_time": [45],
+  "first_air_date": "2011-02-12",
+  "genres": [
+    {
+      "id": 35,
+      "name": "Comedy"
+    }
+  ],
+  "homepage": "https://www.lesmysteresdelamour-officiel.com",
+  "id": 63935,
+  "in_production": true,
+  "languages": ["fr"],
+  "last_air_date": "2023-05-24",
+  "last_episode_to_air": {
+    "id": 4382245,
+    "name": "Episode 26",
+    "overview": "",
+    "vote_average": 0,
+    "vote_count": 0,
+    "air_date": "2023-05-24",
+    "episode_number": 26,
+    "production_code": "",
+    "runtime": null,
+    "season_number": 32,
+    "show_id": 63935,
+    "still_path": null
+  },
+  "name": "Les Mystères de l'amour",
+  "next_episode_to_air": null,
+  "networks": [
+    {
+      "id": 1133,
+      "logo_path": "/mG8AujLo1qacorLWNXqHqMCxlPM.png",
+      "name": "TMC",
+      "origin_country": "FR"
+    }
+  ],
+  "number_of_episodes": 838,
+  "number_of_seasons": 32,
+  "origin_country": ["FR"],
+  "original_language": "fr",
+  "original_name": "Les Mystères de l'amour",
+  "overview": "",
+  "popularity": 602.479,
+  "poster_path": "/mtUhIHbhw0GCacVnPam8p4vwejB.jpg",
+  "production_companies": [
+    {
+      "id": 5076,
+      "logo_path": "/xu6t2UIcICfjS7FEoLl58V1sxW2.png",
+      "name": "TMC",
+      "origin_country": "FR"
+    },
+    {
+      "id": 81171,
+      "logo_path": "/rLXzX15GDqDNh8cYCoRGK3mTPVp.png",
+      "name": "JLA Productions",
+      "origin_country": "FR"
+    },
+    {
+      "id": 22123,
+      "logo_path": "/zPTy6QDAlCKGeAALZoFEL3QAlut.png",
+      "name": "TF1",
+      "origin_country": "FR"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "FR",
+      "name": "France"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2011-02-12",
+      "episode_count": 25,
+      "id": 70669,
+      "name": "Season 1",
+      "overview": "",
+      "poster_path": "/sQZXHFUXakuqNtZtssTZwh6QemX.jpg",
+      "season_number": 1
+    },
+    {
+      "air_date": "2011-11-05",
+      "episode_count": 26,
+      "id": 70670,
+      "name": "Season 2",
+      "overview": "",
+      "poster_path": "/a7C8QASf8UJojy0E7J17D3MTHIB.jpg",
+      "season_number": 2
+    },
+    {
+      "air_date": "2012-05-26",
+      "episode_count": 26,
+      "id": 70671,
+      "name": "Season 3",
+      "overview": "",
+      "poster_path": "/9OtpuX4RWcN7Jc0jvEuHzbgKyZX.jpg",
+      "season_number": 3
+    },
+    {
+      "air_date": "2013-02-17",
+      "episode_count": 26,
+      "id": 70672,
+      "name": "Season 4",
+      "overview": "",
+      "poster_path": "/1ffSRsVRetOqgapoHRj43yXEdVF.jpg",
+      "season_number": 4
+    },
+    {
+      "air_date": "2013-10-19",
+      "episode_count": 26,
+      "id": 70673,
+      "name": "Season 5",
+      "overview": "",
+      "poster_path": "/zp4CpsHEJ2UuWv5Pm6hvpFKg2GK.jpg",
+      "season_number": 5
+    },
+    {
+      "air_date": "2014-03-23",
+      "episode_count": 26,
+      "id": 70674,
+      "name": "Season 6",
+      "overview": "",
+      "poster_path": "/dLN6VzjmVlZxspaYhyTSImug4fO.jpg",
+      "season_number": 6
+    },
+    {
+      "air_date": "2014-08-31",
+      "episode_count": 27,
+      "id": 70675,
+      "name": "Season 7",
+      "overview": "",
+      "poster_path": "/42b3oVAPjG9FZUbEUPMhsG2wywu.jpg",
+      "season_number": 7
+    },
+    {
+      "air_date": "2014-12-06",
+      "episode_count": 28,
+      "id": 80844,
+      "name": "Season 8",
+      "overview": "",
+      "poster_path": "/tWSwAg1PCjphtU5me05NH3zJdb3.jpg",
+      "season_number": 8
+    },
+    {
+      "air_date": "2015-03-28",
+      "episode_count": 28,
+      "id": 94257,
+      "name": "Season 9",
+      "overview": "",
+      "poster_path": "/yIrr2cvAxrzhVvVJZjhWcQkZJGi.jpg",
+      "season_number": 9
+    },
+    {
+      "air_date": "2015-08-29",
+      "episode_count": 26,
+      "id": 94258,
+      "name": "Season 10",
+      "overview": "",
+      "poster_path": "/blfHLEsbBRgtnHiR0pGPJ3UvTHL.jpg",
+      "season_number": 10
+    },
+    {
+      "air_date": "2015-11-28",
+      "episode_count": 26,
+      "id": 94261,
+      "name": "Season 11",
+      "overview": "",
+      "poster_path": "/25sEEMF0GrmeBYsxEdfp3QjokyB.jpg",
+      "season_number": 11
+    },
+    {
+      "air_date": "2016-03-12",
+      "episode_count": 26,
+      "id": 94260,
+      "name": "Season 12",
+      "overview": "",
+      "poster_path": "/fdOLuJDx6NUlQyAuOjBx3hkynER.jpg",
+      "season_number": 12
+    },
+    {
+      "air_date": "2016-08-28",
+      "episode_count": 26,
+      "id": 94262,
+      "name": "Season 13",
+      "overview": "",
+      "poster_path": "/mCn5GxV9wWPwXUyKUmnkiUNdtSe.jpg",
+      "season_number": 13
+    },
+    {
+      "air_date": "2016-11-27",
+      "episode_count": 26,
+      "id": 94255,
+      "name": "Season 14",
+      "overview": "",
+      "poster_path": "/o8R6ruv0SH8Ft3UnORcfvSuIXOr.jpg",
+      "season_number": 14
+    },
+    {
+      "air_date": "2017-04-30",
+      "episode_count": 26,
+      "id": 98952,
+      "name": "Season 15",
+      "overview": "",
+      "poster_path": "/deWdRy69HIp0tv3FS8uCzUdG985.jpg",
+      "season_number": 15
+    },
+    {
+      "air_date": "2017-10-14",
+      "episode_count": 28,
+      "id": 98953,
+      "name": "Season 16",
+      "overview": "",
+      "poster_path": "/Aqg5ndhOVEUTGHFNALmFQAN7Jrz.jpg",
+      "season_number": 16
+    },
+    {
+      "air_date": "2018-02-18",
+      "episode_count": 26,
+      "id": 98954,
+      "name": "Season 17",
+      "overview": "",
+      "poster_path": "/n5GE76aBUIqnvZet7OMnKobdvDX.jpg",
+      "season_number": 17
+    },
+    {
+      "air_date": "2018-05-26",
+      "episode_count": 26,
+      "id": 140127,
+      "name": "Season 18",
+      "overview": "",
+      "poster_path": "/29Ps7UGrmIu1slJp4ZfS44MGazo.jpg",
+      "season_number": 18
+    },
+    {
+      "air_date": "2018-11-10",
+      "episode_count": 26,
+      "id": 140128,
+      "name": "Season 19",
+      "overview": "",
+      "poster_path": "/5JdYl5RBLb2Xqac0E45QUCXZNOi.jpg",
+      "season_number": 19
+    },
+    {
+      "air_date": "2019-03-23",
+      "episode_count": 26,
+      "id": 140129,
+      "name": "Season 20",
+      "overview": "",
+      "poster_path": "/hT43eoJbiUTDaykP12m4OU8o0qY.jpg",
+      "season_number": 20
+    },
+    {
+      "air_date": "2019-09-14",
+      "episode_count": 26,
+      "id": 140130,
+      "name": "Season 21",
+      "overview": "",
+      "poster_path": "/pUm2wTsAlDGuaOidnkdRjkjrUtG.jpg",
+      "season_number": 21
+    },
+    {
+      "air_date": "2019-12-14",
+      "episode_count": 26,
+      "id": 140131,
+      "name": "Season 22",
+      "overview": "",
+      "poster_path": "/w03vdy3oRPlakDdncuDpeRkoO2A.jpg",
+      "season_number": 22
+    },
+    {
+      "air_date": "2020-08-18",
+      "episode_count": 26,
+      "id": 236514,
+      "name": "Season 23",
+      "overview": "",
+      "poster_path": "/4Z2HQOko0m09meorxXnaETUbxLL.jpg",
+      "season_number": 23
+    },
+    {
+      "air_date": "2021-02-02",
+      "episode_count": 26,
+      "id": 236516,
+      "name": "Season 24",
+      "overview": "",
+      "poster_path": "/kc1CvLZixyJ39rHBgz3uxizWkaf.jpg",
+      "season_number": 24
+    },
+    {
+      "air_date": "2021-02-14",
+      "episode_count": 26,
+      "id": 236517,
+      "name": "Season 25",
+      "overview": "",
+      "poster_path": "/r0vJYrC7AmXXZvZPBhSc8iHLeqj.jpg",
+      "season_number": 25
+    },
+    {
+      "air_date": "2021-04-29",
+      "episode_count": 26,
+      "id": 236518,
+      "name": "Season 26",
+      "overview": "",
+      "poster_path": "/j5R12Bn6TCxm8EYr9uhSwp4EGQJ.jpg",
+      "season_number": 26
+    },
+    {
+      "air_date": "2021-10-10",
+      "episode_count": 26,
+      "id": 236519,
+      "name": "Season 27",
+      "overview": "",
+      "poster_path": "/meGjPOokWCEBqNDm6GxRyy8CG37.jpg",
+      "season_number": 27
+    },
+    {
+      "air_date": "2022-01-23",
+      "episode_count": 26,
+      "id": 241991,
+      "name": "Season 28",
+      "overview": "",
+      "poster_path": "/kEmKYwaHYLEuFjmHkUBlhQeKPds.jpg",
+      "season_number": 28
+    },
+    {
+      "air_date": "2022-04-30",
+      "episode_count": 26,
+      "id": 324883,
+      "name": "Season 29",
+      "overview": "",
+      "poster_path": "/dEIAKW9thDl5T4rI6yEwK9F7Egm.jpg",
+      "season_number": 29
+    },
+    {
+      "air_date": "2022-09-05",
+      "episode_count": 26,
+      "id": 324884,
+      "name": "Season 30",
+      "overview": "",
+      "poster_path": "/AeJbEtdNLR7pjoxvh0B2tfYd0Wz.jpg",
+      "season_number": 30
+    },
+    {
+      "air_date": "2023-01-01",
+      "episode_count": 26,
+      "id": 324885,
+      "name": "Season 31",
+      "overview": "",
+      "poster_path": "/fHckSd04xrWKaeuwJJ6PGKvwhSL.jpg",
+      "season_number": 31
+    },
+    {
+      "air_date": "2023-04-22",
+      "episode_count": 26,
+      "id": 336494,
+      "name": "Season 32",
+      "overview": "",
+      "poster_path": "/s7cxLtgMWTKYe57f8cW1gtJQ4IU.jpg",
+      "season_number": 32
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "French",
+      "iso_639_1": "fr",
+      "name": "Français"
+    }
+  ],
+  "status": "Returning Series",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 5.889,
+  "vote_count": 9
+}

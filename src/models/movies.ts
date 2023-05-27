@@ -44,7 +44,7 @@ interface Production {
 }
 
 export interface MovieData extends MainMovie {
-  budget: number
+  budget?: number | null
   genres: Genre[]
   homepage: URL
   production_companies: Production[]
@@ -57,7 +57,7 @@ export class MovieInfo extends Movie {
   production: MovieData['production_companies']
   constructor(from: MovieData) {
     super(from)
-    this.budget = parseCurrency(from.budget) as unknown as number
+    this.budget = from.budget ? parseCurrency(from.budget) as unknown as number : null
     this.genres = from.genres
     this.homepage = from.homepage
     this.production = from.production_companies.map(({ name, id }) => ({ name, id }))

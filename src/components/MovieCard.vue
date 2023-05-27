@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="`/movies/${movie.id}`">
+  <router-link :to="`/${type}/${movie.id}`">
     <div class="min-w-[250px] min-h-[200px] max-h-[600px] flex flex-col gap-2">
       <Poster :poster="{ posterLink: movie.poster, title: movie.title }" />
       <label class="truncate">{{ movie.title }}</label>
@@ -21,13 +21,16 @@
 <script setup lang="ts">
 import { PropType } from 'vue'
 import { Favorite } from '../assets/icons'
-import { Movie } from '../models/movies'
 
 import Poster from './Poster.vue'
 
 defineProps({
   movie: {
-    type: Object as PropType<Movie>,
+    type: Object as PropType<any>,
+    required: true,
+  },
+  type: {
+    type: String as PropType<'tv' | 'movies'>,
     required: true,
   },
 })
