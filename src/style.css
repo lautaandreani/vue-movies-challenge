@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        background-color: black;
+        color: whitesmoke;
+        font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    ::-webkit-scrollbar {
+        background-color: #303030;
+        width: .5rem;
+        height: .5rem;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #141414;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-corner {
+        border-radius: 4px;
+    }
+}
