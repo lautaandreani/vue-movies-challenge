@@ -13,7 +13,7 @@ export const parseRatings = (rate: number): number => {
 
 type size = "w300" | "w780" | "w1280" | "original"
 export const getBackdropPath = (path: string, size: size) => {
-  return `http://image.tmdb.org/t/p/${size}/${path}`
+  return `https://image.tmdb.org/t/p/${size}/${path}`
 }
 
 export const parseCurrency = (price: number) => {
