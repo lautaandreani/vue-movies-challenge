@@ -25,7 +25,7 @@ const useMovies = () => {
   }
 
   const getPopularMovie = async () => {
-    mainMovie.value = await getMainMovie()
+      mainMovie.value = await getMainMovie()
   }
 
   const getMovieByIdData = async (id: number) => {
