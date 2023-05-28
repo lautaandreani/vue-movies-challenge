@@ -32,6 +32,10 @@ const useMovies = () => {
     movieById.value = await getMovieById(id)
   }
 
+  const getMoviesByPage = () => {
+    return movies.value?.concat(movies.value)
+  }
+
   const filterMovies = (input: string) => {
     const filteredMovies = [...movies.value!].filter((movie) => movie.title.toLowerCase().includes(input.toLowerCase()))
     return filteredMovies
@@ -49,6 +53,7 @@ const useMovies = () => {
     getPopularMovie,
     getMovieByIdData,
     filterMovies,
+    getMoviesByPage
   }
 }
 

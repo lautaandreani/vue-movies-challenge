@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/${type}/${movie.id}`">
-    <div class="min-w-[250px] min-h-[200px] max-h-[600px] flex flex-col gap-2">
+    <div class="min-w-[250px] min-h-[200px] max-h-[600px] flex flex-col gap-2 card">
       <Poster :poster="{ posterLink: movie.poster, title: movie.title }" />
       <label class="truncate">{{ movie.title }}</label>
       <div class="flex justify-between items-center px-2">
