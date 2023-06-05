@@ -4,7 +4,10 @@
     <div class="flex flex-wrap justify-center gap-10 pl-10 pb-10" v-if="filteredMovies?.length">
       <MovieCard v-for="movie in filteredMovies" :key="movie.id" :movie="movie" type="movies" />
     </div>
-    <div v-else>
+    <div v-if="loading">
+      <p>Loading...</p>
+    </div>
+    <div v-if="error">
       <h3>
         Not found results for: <span class="text-brand-green">{{ search }}</span>
       </h3>
@@ -20,7 +23,7 @@ import useMovies from '../composables/useMovies'
 import { Search, MovieCard } from '../components'
 import { Movie } from '../models/movies'
 
-const { getMoviesList, filterMovies } = useMovies()
+const { getMoviesList, filterMovies, error, loading } = useMovies()
 
 const search = ref()
 const filteredMovies = ref<Movie[] | undefined>([])

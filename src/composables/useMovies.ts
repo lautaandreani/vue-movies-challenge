@@ -10,10 +10,21 @@ const useMovies = () => {
   const tvShow = ref<TvShow | undefined>()
   const mainMovie = ref<Movie | undefined>()
   const movieById = ref<MovieInfo | undefined>()
+  const loading = ref(false)
+  const error = ref(false)
 
   const getMoviesList = async () => {
-    movies.value = await getMovies()
-    return movies.value
+    try {
+      loading.value = true
+      const responseMovies = await getMovies()
+      movies.value = responseMovies
+      return movies.value
+    } catch (err) {
+      console.error(err)
+      error.value = true
+    }finally {
+      loading.value = false
+    }
   }
 
   const getTvShowList = async () => {
@@ -47,6 +58,8 @@ const useMovies = () => {
     mainMovie,
     movieById,
     tvShow,
+    loading, 
+    error,
     getMoviesList,
     getTvShowList,
     getTvShowByIdData,
