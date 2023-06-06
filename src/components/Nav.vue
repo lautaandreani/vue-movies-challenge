@@ -3,17 +3,17 @@
     <nav>
       <ul class="flex flex-col justify-evenly h-screen">
         <li>
-          <router-link to="/">
+          <router-link to="/" exact-active-class="is-active">
             <Movie />
           </router-link>
         </li>
         <li>
-          <router-link to="/movies">
+          <router-link to="/movies" exact-active-class="is-active">
             <Film />
           </router-link>
         </li>
         <li>
-          <router-link to="/favorites">
+          <router-link to="/favorites" exact-active-class="is-active">
             <Favorite />
           </router-link>
         </li>
@@ -26,4 +26,8 @@
 import { Film, Movie, Favorite } from '../assets/icons/'
 </script>
 
-<style scoped></style>
+<style scoped>
+.is-active {
+  color: #41b883;
+}
+</style>

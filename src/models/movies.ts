@@ -10,6 +10,7 @@ export interface MainMovie {
   backdrop_path: string
   id: string
   poster_path: string
+  genre_ids?: Genre[]
 }
 
 export class Movie {
@@ -20,6 +21,7 @@ export class Movie {
   description: MainMovie['overview']
   backdrop: MainMovie['backdrop_path']
   poster: MainMovie['poster_path']
+  genres: MainMovie['genre_ids']
   id: MainMovie['id']
   constructor(from: MainMovie) {
     this.title = from.title
@@ -29,16 +31,17 @@ export class Movie {
     this.description = from.overview
     this.backdrop = getBackdropPath(from.backdrop_path, 'w1280')
     this.poster = getBackdropPath(from.poster_path, 'w780')
+    this.genres = from.genre_ids
     this.id = from.id
   }
 }
 
-interface Genre {
+export interface Genre {
   name: string
   id: number
 }
 
-interface Production {
+export interface Production {
   name: string
   id: number
 }
@@ -57,7 +60,7 @@ export class MovieInfo extends Movie {
   production: MovieData['production_companies']
   constructor(from: MovieData) {
     super(from)
-    this.budget = from.budget ? parseCurrency(from.budget) as unknown as number : null
+    this.budget = from.budget ? (parseCurrency(from.budget) as unknown as number) : null
     this.genres = from.genres
     this.homepage = from.homepage
     this.production = from.production_companies.map(({ name, id }) => ({ name, id }))
