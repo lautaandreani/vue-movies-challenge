@@ -1,6 +1,6 @@
 <template>
   <main class="min-w-full bg-soft_gray flex flex-col gap-4 items-center p-4 h-full">
-    <div class="flex w-1/4">
+    <div class="flex w-1/4 min-w-[20rem]">
       <Search @input-value="(e) => (search = e)" />
       <div class="flex gap-2 items-center">
         <select
