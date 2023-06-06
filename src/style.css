@@ -23,7 +23,4 @@
   ::-webkit-scrollbar-corner {
     border-radius: 4px;
   }
-  .v-link-active {
-    background-color: red;
-  }
 }

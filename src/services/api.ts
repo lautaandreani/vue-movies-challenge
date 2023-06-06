@@ -62,10 +62,10 @@ export const getTvShowById = async (id: number): Promise<TvShow | undefined> => 
 
 export const getGenres = async (): Promise<Genre[] | undefined> => {
   try {
-    const { genres }: any = import.meta.env.DEV ? genresMock : await fetch(`${TMDB_URL}/genre/movie/list`, options)
-    const response = import.meta.env.DEV ? genres : await genres.json()
+    const response: any = import.meta.env.DEV ? genresMock : await fetch(`${TMDB_URL}/genre/movie/list`, options)
+    const { genres } = import.meta.env.DEV ? genresMock : await response.json()
 
-    return response
+    return import.meta.env.DEV ? genresMock.genres : genres
   } catch (error) {
     if (error instanceof Error) throw new Error(`Error getting tv show by id ${error}`)
   }
