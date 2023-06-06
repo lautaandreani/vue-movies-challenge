@@ -1,4 +1,7 @@
 <template>
+  <div v-if="loading">
+    <p class="text-center">Loading...</p>
+  </div>
   <div class="flex flex-col" v-if="movieById">
     <MainMovie :main-movie="movieById" disableOverview />
     <main class="min-h-[50vh] bg-soft_gray w-full flex justify-center items-center p-4">
@@ -42,7 +45,7 @@
       </section>
     </main>
   </div>
-  <div v-else>
+  <div v-if="error">
     <p>Ocurrio un error al buscar la película</p>
   </div>
 </template>
@@ -57,7 +60,7 @@ import Poster from '../components/Poster.vue'
 
 const route = useRoute()
 
-const { getMovieByIdData, movieById } = useMovies()
+const { getMovieByIdData, movieById, error, loading } = useMovies()
 
 onMounted(async () => {
   await getMovieByIdData(Number(route.params.id))

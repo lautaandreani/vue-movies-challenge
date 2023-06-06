@@ -18,8 +18,7 @@ const useMovies = () => {
   const getMoviesList = async () => {
     try {
       loading.value = true
-      const responseMovies = await getMovies()
-      movies.value = responseMovies
+      movies.value = await getMovies()
       return movies.value
     } catch (err) {
       console.error(err)
@@ -42,7 +41,15 @@ const useMovies = () => {
   }
 
   const getMovieByIdData = async (id: number) => {
-    movieById.value = await getMovieById(id)
+    try {
+      loading.value = true
+      movieById.value = await getMovieById(id)
+    } catch (err) {
+      console.error(err)
+      error.value = true
+    } finally {
+      loading.value = false
+    }
   }
 
   const getGenresList = async () => {
