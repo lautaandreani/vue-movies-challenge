@@ -23,7 +23,7 @@
       <p>Loading...</p>
     </div>
 
-    <div v-if="!filteredMovies?.length">
+    <div v-if="!filteredMovies?.length && (!filterValue || !search)">
       <p>No se encontraron películas</p>
     </div>
   </main>
