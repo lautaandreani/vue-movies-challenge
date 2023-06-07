@@ -20,12 +20,12 @@ import { MovieCard, MainMovie } from '../components'
 
 import useMovies from '../composables/useMovies'
 
-const { movies, tvShows, mainMovie, getMoviesList, getTvShowList, getPopularMovie } = useMovies()
+const { movies, tvShows, mainMovie, getMoviesList, getTvShowList, getRandomMovie } = useMovies()
 
 onMounted(async () => {
   await getMoviesList()
   await getTvShowList()
-  await getPopularMovie()
+  await getRandomMovie(movies)
 })
 </script>
 

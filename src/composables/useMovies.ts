@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { Ref, ref } from 'vue'
 import { getMovies, getTvShows, getMainMovie, getMovieById, getTvShowById, getGenres } from '../services/api'
 
 import type { Genre, Movie, MovieInfo } from '../models/movies'
@@ -36,8 +36,12 @@ const useMovies = () => {
     tvShow.value = await getTvShowById(id)
   }
 
-  const getPopularMovie = async () => {
-    mainMovie.value = await getMainMovie()
+  const getRandomMovie = async (movies: Ref<Movie[] | undefined>) => {
+    if (movies.value) {
+      const randomMovie = Math.floor(Math.random() * movies.value.length)
+      const movieById = movies.value[randomMovie].id
+      mainMovie.value = await getMainMovie(movieById)
+    }
   }
 
   const getMovieByIdData = async (id: number) => {
@@ -59,14 +63,14 @@ const useMovies = () => {
   const filterMovies = (input: string | number, type: 'name' | 'genre') => {
     if (type === 'name' && typeof input === 'string') {
       if (input && filteredMovies.value?.length) {
-        filteredMovies.value = [...filteredMovies.value!].filter((movie) => movie.title.toLowerCase().includes(input.toLowerCase()))
+        filteredMovies.value = filteredMovies.value.filter((movie) => movie.title.toLowerCase().includes(input.toLowerCase()))
         return filteredMovies.value
       }
-      filteredMovies.value = [...movies.value!].filter((movie) => movie.title.toLowerCase().includes(input.toLowerCase()))
+      filteredMovies.value = movies.value?.filter((movie) => movie.title.toLowerCase().includes(input.toLowerCase()))
       return filteredMovies.value
     } else {
       if (!input) return movies.value
-      filteredMovies.value = [...movies.value!].filter((movie) => movie.genres?.includes(Number(input) as any))
+      filteredMovies.value = movies.value?.filter((movie) => movie.genres?.includes(Number(input) as any))
       return filteredMovies.value
     }
   }
@@ -83,7 +87,7 @@ const useMovies = () => {
     getMoviesList,
     getTvShowList,
     getTvShowByIdData,
-    getPopularMovie,
+    getRandomMovie,
     getMovieByIdData,
     filterMovies,
     getGenresList,

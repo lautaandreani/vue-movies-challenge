@@ -5,9 +5,9 @@ import { mainMovie, movies, tv, mainTv, genres as genresMock } from '../mock'
 import { Genre, MainMovie, Movie, MovieInfo } from '../models/movies'
 import { ITVshow, TvShow } from '../models/tv'
 
-export const getMainMovie = async (): Promise<Movie | undefined> => {
+export const getMainMovie = async (id: string): Promise<Movie | undefined> => {
   try {
-    const movie: any = import.meta.env.DEV ? mainMovie : await fetch(`${TMDB_URL}/movie/502356?language=en-US`, options)
+    const movie: any = import.meta.env.DEV ? mainMovie : await fetch(`${TMDB_URL}/movie/${id}?language=en-US`, options)
     const response = import.meta.env.DEV ? mainMovie : await movie.json()
 
     return new Movie(response)
